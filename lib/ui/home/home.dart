@@ -149,13 +149,13 @@ class _HomeScreenState extends State<HomeScreen> {
     return ListTile(
       dense: true,
       leading: Icon(Icons.cloud_circle),
-      title: Text(
-        '${_postStore.postList?.posts?[position].title}',
-        maxLines: 1,
-        overflow: TextOverflow.ellipsis,
-        softWrap: false,
-        style: Theme.of(context).textTheme.title,
-      ),
+      // title: Text(
+      //   '${_postStore.postList?.posts?[position].title}',
+      //   maxLines: 1,
+      //   overflow: TextOverflow.ellipsis,
+      //   softWrap: false,
+      //   style: Theme.of(context).textTheme.title,
+      // ),
       subtitle: Text(
         '${_postStore.postList?.posts?[position].body}',
         maxLines: 1,

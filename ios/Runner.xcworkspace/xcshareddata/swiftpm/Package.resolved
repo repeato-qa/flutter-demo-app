@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RepeatoCapture",
+        "repositoryURL": "https://github.com/stoefln/RepeatoCapture",
+        "state": {
+          "branch": "main",
+          "revision": "ea00f2e735ee5a1dcf8d3260257769db121ee64c",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
