@@ -9,6 +9,16 @@ A hello world project created in flutter using MobX and Provider. This project s
 
 The Boilerplate contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. By using boiler plate code as standard initializer, we can have same patterns in all the projects that will inherit it. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
 
+## Flutter & REPEATO Cli integration comparison:
+
+|        | Local  | Bitrise | GithubAction |
+| -----  | ------------- | ------------- | ------------- |
+| Time (2 tests)  |  1 minute | 1M 40S  - 2M   | 5M Approx (1st taking too much time 4 minutes)  |
+| Device |  Pixel - 3A   |    Pixel - 3A     |    Pixel - 3A     |
+| Pipeline  | N/A        |    9M - 12M   |   10M - 17M  |
+| AVD Step | N/A        | 4M (In background, 2M waitFor step)    |  (No background feature -> 3.5M to 10M)  |
+| FlutterBuild   | 30 Sec  | 2M-3M       | 2M-7M  |
+
 ## How to Use 
 
 **Step 1:**
@@ -55,32 +65,6 @@ In Visual Studio Code, navigate to `Preferences` -> `Settings` and search for `F
 **/*.inject.dart
 **/*.g.dart
 ```
-
-## Boilerplate Features:
-
-* Splash
-* Login
-* Home
-* Routing
-* Theme
-* Dio
-* Database
-* MobX (to connect the reactive data of your application with the UI)
-* Provider (State Management)
-* Encryption
-* Validation
-* Code Generation
-* User Notifications
-* Logging
-* Dependency Injection
-* Dark Theme Support (new)
-* Multilingual Support (new)
-* Provider example (new)
-
-### Up-Coming Features:
-
-* Connectivity Support
-* Background Fetch Support
 
 ### Libraries & Tools Used
 
