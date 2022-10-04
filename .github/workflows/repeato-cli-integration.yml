@@ -57,3 +57,11 @@ jobs:
         with:
           name: upload-logs
           path: repeato-cli/log.txt
+
+      - name: Upload report to S3
+        uses: shallwefootball/s3-upload-action@master
+        with:
+          aws_key_id: $AWS_ACCESS_KEY
+          aws_secret_access_key: $AWS_ACCESS_SECRET_KEY
+          aws_bucket: $AWS_BUCKET
+          source_dir: batch-report
