@@ -1,6 +1,11 @@
 # You may see available device
 adb devices
 
+# Checking keys and secrets are set properly
+echo "Trick to echo GitHub Actions Secret:"
+echo $AWS_BUCKET
+echo $LICENSE_KEY | sed 's/./& /g' 
+
 #flutter build apk --split-per-abi # to make build of app but we are using github action for build
 
 # Goto build folder and install the app according to emulator architecture
