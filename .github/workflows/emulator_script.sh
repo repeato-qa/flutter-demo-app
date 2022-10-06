@@ -23,13 +23,13 @@ MACHINE_TYPE=`uname -m`
 
 # Use below script to install latest CLI always
 # RELEASE_URL=$(node ./.github/workflows/latest-cli-release.js "${MACHINE_TYPE}" "") 
-RELEASE_URL="https://github.com/repeato-qa/Repeato-CLI-prebuilt/releases/download/v1.2.1/repeato-cli-mac.zip"
+RELEASE_URL="https://github.com/repeato-qa/Repeato-CLI-prebuilt/releases/download/v1.2.3/repeato-cli-mac.zip"
 wget -q "${RELEASE_URL}" -O repeato-cli.zip
 unzip -qq repeato-cli.zip -d repeato-cli/
 
 cd repeato-cli
 
 # log.txt is optional paramter - you may remove it (only needed when you want to send logs to REPEATO for debugging)
-node testrun.js --licenseKey "$LICENSE_KEY" --workspaceDir "../workspace-tests" --batchId "0" --outputDir "../batch-report" --logLevel DEBUG > log.txt
+node testrun.js --licenseKey "$LICENSE_KEY" --workspaceDir "../workspace-tests" --batchId "0" --outputDir "../batch-report" --logLevel DEBUG
 
 # cd ../batch-report # report path which is at root level
