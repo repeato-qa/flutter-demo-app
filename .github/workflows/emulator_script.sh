@@ -18,7 +18,7 @@ MACHINE_TYPE=`uname -m`
 
 # Use below script to install latest CLI always
 # RELEASE_URL=$(node ./.github/workflows/latest-cli-release.js "${MACHINE_TYPE}" "") 
-RELEASE_URL="https://github.com/repeato-qa/Repeato-CLI-prebuilt/releases/download/v1.2.1/repeato-cli-mac.zip"
+RELEASE_URL="https://github.com/repeato-qa/Repeato-CLI-prebuilt/releases/download/v1.2.4/repeato-cli-mac.zip"
 wget -q "${RELEASE_URL}" -O repeato-cli.zip
 unzip -qq repeato-cli.zip -d repeato-cli/
 
