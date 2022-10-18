@@ -31,7 +31,7 @@ jobs:
         run: ls -la build/app/outputs/flutter-apk/
       
       - name: Copy APK to project root
-        run: mv build/app/outputs/flutter-apk/app-x86_64-release.apk app.apk
+        run: mv build/app/outputs/flutter-apk/*.apk .
 
       - name: Commit APK
         uses: EndBug/add-and-commit@v9
