@@ -27,21 +27,16 @@ jobs:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-x86_64-release.apk
 
-      - name: copy file
-        uses: canastro/copy-file-action@master
-        with:
-          source: build/app/outputs/flutter-apk/app-x86_64-release.apk
-          target: app.apk
-
+      - name: Copy APK to project root
+        run: mv build/app/outputs/flutter-apk/app-x86_64-release.apk app.apk
 
       - name: Commit APK
         uses: EndBug/add-and-commit@v9
         with:
           author_name: Github Action
           author_email: stephan@repeato.app
-          message: 'Added apk'
-          add: '*.apk'
-          
+          message: 'Added APK'
+          add: 'app.apk'
 
 #      - name: Upload report to S3
 #        uses: shallwefootball/s3-upload-action@master
