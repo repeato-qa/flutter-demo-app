@@ -39,7 +39,7 @@ jobs:
           author_name: Github Action
           author_email: stephan@repeato.app
           message: 'Added APK'
-          add: 'app.apk'
+          add: '*.apk'
 
 #      - name: Upload report to S3
 #        uses: shallwefootball/s3-upload-action@master
