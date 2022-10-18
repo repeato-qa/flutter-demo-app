@@ -26,42 +26,27 @@ jobs:
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-x86_64-release.apk
-      
-      - name: Checkout workspace repo
-        uses: actions/checkout@v3
-        with:
-          repository: repeato-qa/demo-workspace
-          path: workspace-tests
 
-      - name: Android Emulator
-        uses: reactivecircus/android-emulator-runner@v2
+      - name: copy file
+        uses: canastro/copy-file-action@master
         with:
-          api-level: 29
-          emulator-build: 7425822
-          target: google_apis
-          arch : x86_64
-          # arch : arm64-v8a
-          profile: 'pixel_3a'
-          ram-size: 4096M
-          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          script:  ./.github/workflows/emulator_script.sh 
+          source: build/app/outputs/flutter-apk/app-x86_64-release.apk
+          target: app.apk
 
-      - name: Upload Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: upload-report
-          path: batch-report
 
-      - name: Upload Logs
-        uses: actions/upload-artifact@v3
+      - name: Commit APK
+        uses: EndBug/add-and-commit@v9
         with:
-          name: upload-logs
-          path: repeato-cli/log.txt
+          author_name: Github Action
+          author_email: stephan@repeato.app
+          message: 'Added apk'
+          add: '*.apk'
+          
 
-      - name: Upload report to S3
-        uses: shallwefootball/s3-upload-action@master
-        with:
-          aws_key_id: $AWS_ACCESS_KEY
-          aws_secret_access_key: $AWS_ACCESS_SECRET_KEY
-          aws_bucket: $AWS_BUCKET
-          source_dir: batch-report
+#      - name: Upload report to S3
+#        uses: shallwefootball/s3-upload-action@master
+#        with:
+#          aws_key_id: $AWS_ACCESS_KEY
+#          aws_secret_access_key: $AWS_ACCESS_SECRET_KEY
+#          aws_bucket: $AWS_BUCKET
+#          source_dir: batch-report
