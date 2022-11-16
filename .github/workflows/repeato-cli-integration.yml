@@ -66,7 +66,9 @@ jobs:
           disable-animations: true
           script: adb install ./app-x86_64-release.apk && npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --licenseKey ${{ secrets.REPEATO_LICENSE_KEY }} --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
-      # Optional: Upload the reports to some bucket or FTP directory, so it can be easily shared
+      # Optional: Upload the reports to some bucket so a link to the batch run report can be easily shared
+      # For AWS S3 You must enable enable ACLs object writing for bucket.
+      # Don't put your access keys in here. Use Github secrets for storing & accessing the keys.
 #      - name: Upload report to S3
 #        uses: shallwefootball/s3-upload-action@master
 #        with:
