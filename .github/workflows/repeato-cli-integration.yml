@@ -69,6 +69,7 @@ jobs:
       # Optional: Upload the reports to some bucket so a link to the batch run report can be easily shared
       # For AWS S3 You must enable enable ACLs object writing for bucket.
       # Don't put your access keys in here. Use Github secrets for storing & accessing the keys.
+      # You might want to use 'if: always()' in this step and following ones, so the report is also uploaded if your test batch run failed.
 #      - name: Upload report to S3
 #        uses: shallwefootball/s3-upload-action@master
 #        with:
