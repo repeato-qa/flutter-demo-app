@@ -4,15 +4,27 @@ on: [push]
 
 jobs:
   repeato-cli:
-    name: Build and run repeato tests using REPEATO CLI
+    name: Build and run repeato tests using Repeato CLI
     runs-on: macos-latest
 
     steps:
-      - uses: actions/checkout@v3
+      # Configure Node.js. Version 16 is currently required
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '16'
 
+      # Check out the app source code
+      - uses: actions/checkout@v3
+
+      # Check out the Repeato test workspace. Your tests could also live in the same repository as your app source code. But in this case we decided to have it in it's separate repo.
+      - name: Checkout workspace repo
+        uses: actions/checkout@v3
+        with:
+          repository: repeato-qa/demo-workspace
+          path: workspace-tests
+          clean: false
+
+      # We need Flutter to build the app
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
@@ -21,16 +33,18 @@ jobs:
       - run: flutter pub get
       - run: flutter build apk --split-per-abi
 
+      # Optional: Add the built apk to the build artifacts
       - name: Upload APK
         uses: actions/upload-artifact@v3
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-x86_64-release.apk
 
+      # Optional: We also commit the built app to the repo. It's saving us some time because we can use the apk in other workflows directly.
       - name: List APKs
         run: ls -la build/app/outputs/flutter-apk/
       
-      - name: Copy APK to project root
+      - name: Move APK to project root
         run: mv build/app/outputs/flutter-apk/*.apk .
 
       - name: Commit APK
@@ -40,7 +54,19 @@ jobs:
           author_email: stephan@repeato.app
           message: 'Added APK'
           add: '*.apk'
+          
+      # Finally: Start emulator, install the app and run the tests via npx @repeato/cli-testrunner
+      - name: run tests
+        uses: reactivecircus/android-emulator-runner@d7b53ddc6e44254e1f4cf4a6ad67345837027a66
+        with:
+          api-level: 29
+          arch: x86_64
+          force-avd-creation: false
+          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          script: adb install ./app-x86_64-release.apk && npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --licenseKey ${{ secrets.REPEATO_LICENSE_KEY }} --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
+      # Optional: Upload the reports to some bucket or FTP directory, so it can be easily shared
 #      - name: Upload report to S3
 #        uses: shallwefootball/s3-upload-action@master
 #        with:
