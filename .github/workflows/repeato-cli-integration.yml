@@ -57,13 +57,16 @@ jobs:
           
       # Finally: Start emulator, install the app and run the tests via npx @repeato/cli-testrunner
       - name: run tests
-        uses: reactivecircus/android-emulator-runner@d7b53ddc6e44254e1f4cf4a6ad67345837027a66
+        uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
-          arch: x86_64
-          force-avd-creation: false
-          emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
-          disable-animations: true
+          emulator-build: 7425822
+          target: google_apis
+          arch : x86_64
+          # arch : arm64-v8a
+          profile: 'pixel_3a'
+          ram-size: 4096M
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           script: adb install ./app-x86_64-release.apk && npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --licenseKey ${{ secrets.REPEATO_LICENSE_KEY }} --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
       # Optional: Upload the reports to some bucket so a link to the batch run report can be easily shared
