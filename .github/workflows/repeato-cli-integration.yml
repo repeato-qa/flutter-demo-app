@@ -5,7 +5,7 @@ on: [push]
 jobs:
   repeato-cli:
     name: Build and run repeato tests using Repeato CLI
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
       # Configure Node.js. Version 16 is currently required
