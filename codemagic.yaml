@@ -1,0 +1,41 @@
+workflows:
+  android-workflow:
+    name: Android Workflow
+    instance_type: linux_x2
+    max_build_duration: 120
+    environment:
+      node: 16.19.0
+      flutter: 3.0.1
+      vars:
+        LICENSE_KEY: "unlimited82eac20c3f31aa0d3d"
+    scripts:
+      - name: Set up local.properties
+        script: |
+          #!/usr/bin/env zsh 
+          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"
+      - name: Get Flutter packages
+        script: flutter packages pub get
+      - name: Build apk with Flutter
+        script: flutter build apk
+      - name: Launch emulator
+        script: |
+          emulator @emulator &  # Use `emulator -list-avds` to list all emulators
+          adb wait-for-device # wait for the emulator to finish loading
+      - name: Install app
+        script: |
+          adb install build/app/outputs/apk/release/app-release.apk
+      - name: Wait for 1 minute
+        script: sleep $((20*1))
+      - name: Run Repeato tests
+        script: |
+          npx @repeato/cli-testrunner \
+          --workspaceDir "tests" \
+          --logLevel "DEBUG" \
+          --batchId 0 \
+          --licenseKey "$LICENSE_KEY" \
+          --outputDir "./batch-report"
+      - name: Zip batch report
+        script: 7z a -r batch-report.zip ./batch-report/*   
+    artifacts:
+      - build/**/outputs/apk/**/*.apk
+      - batch-report.zip
