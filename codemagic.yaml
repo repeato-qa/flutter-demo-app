@@ -29,7 +29,7 @@ workflows:
       - name: Run Repeato tests
         script: |
           npx @repeato/cli-testrunner \
-          --workspaceDir "tests" \
+          --workspaceDir "demo-workspace" \
           --logLevel "DEBUG" \
           --batchId 0 \
           --licenseKey "$LICENSE_KEY" \

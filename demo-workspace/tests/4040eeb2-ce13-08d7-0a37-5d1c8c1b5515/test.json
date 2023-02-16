@@ -1,0 +1,306 @@
+{
+    "version": 4,
+    "id": "4040eeb2-ce13-08d7-0a37-5d1c8c1b5515",
+    "title": "API29-EmailRandomClicks",
+    "steps": [
+        {
+            "id": "1a9ad770-ddc9-cdc1-b6fc-a0ecc13e9d28",
+            "type": "startApp",
+            "optional": false,
+            "createdOn": 1661783653689,
+            "packageName": "com.android.email",
+            "activityName": ".activity.Welcome",
+            "deleteAppData": false,
+            "grantPermissions": [
+                "GET_ACCOUNTS",
+                "READ_CALENDAR",
+                "READ_CONTACTS",
+                "READ_EXTERNAL_STORAGE",
+                "READ_PHONE_STATE",
+                "WRITE_CALENDAR",
+                "WRITE_CONTACTS",
+                "WRITE_EXTERNAL_STORAGE"
+            ],
+            "allPermissions": [
+                "GET_ACCOUNTS",
+                "READ_CALENDAR",
+                "READ_CONTACTS",
+                "READ_EXTERNAL_STORAGE",
+                "READ_PHONE_STATE",
+                "WRITE_CALENDAR",
+                "WRITE_CONTACTS",
+                "WRITE_EXTERNAL_STORAGE"
+            ],
+            "os": "Android"
+        },
+        {
+            "id": "b6997887-c398-7a2e-7033-0a6f8ee35ffb",
+            "originalFrame": "87d04704-7720-923d-6cae-92a90bdd4755_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783660801,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.12842592592592592,
+                "y": 0.03833333333333333,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "bb527cad-ef1f-3c92-ee04-b02eaea75468_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.12777777777777777,
+                        "y": 0.038288288288288286
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.1884259259259259,
+                "y": 0.058333333333333334
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "7bf2b75c-7730-a852-d546-906127c8983a",
+            "originalFrame": "bddc0f36-a411-f1e8-2117-599dddc3173b_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783662704,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.21407407407407408,
+                "y": 0.13625,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "07a615a7-f45c-a3bc-afef-0cff36035b02_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.21388888888888888,
+                        "y": 0.13603603603603603
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999976952870687
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.2740740740740741,
+                "y": 0.15625
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "e390e875-fe97-ad57-3f87-8bc95629eb0d",
+            "originalFrame": "ae45d9f9-178b-d22e-63dd-6f5d9e2ad50d_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783669678,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.17553240740740741,
+                "y": 0.88,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "8ed9fd6c-5f99-fe66-b169-8ac3bfefd5a8_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.175,
+                        "y": 0.8797297297297297
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.2355324074074074,
+                "y": 0.9
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "4332dab9-9b4a-f783-e3ec-588e3ea23adc",
+            "originalFrame": "302139bf-87dc-b402-a2f7-f3f449661f9c_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783672676,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7836342592592593,
+                "y": 0.88625,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "a3bd73c9-fdeb-ed19-19b4-cd3fee972ac6_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7833333333333333,
+                        "y": 0.8860360360360361
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999945958455404
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.8436342592592593,
+                "y": 0.90625
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "136eec0e-5db0-cee1-ea30-177c33645cb3",
+            "originalFrame": "ab1d6298-b4f2-2ffe-4613-45acfb961f25_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783677389,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7236805555555557,
+                "y": 0.1675,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "0e58215d-d7fe-9ccd-397a-59e50e135ace_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7231481481481481,
+                        "y": 0.1671171171171171
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.7836805555555556,
+                "y": 0.1875
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "62539327-e28e-6e6b-16d3-48944ae18883",
+            "originalFrame": "497d9767-def1-2722-9422-976a5d12e576_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783679920,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.09844907407407408,
+                "y": 0.044583333333333336,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "ac3b5148-1877-326f-d5eb-1e2c5091351d_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.09814814814814815,
+                        "y": 0.044144144144144144
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999991257985433
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.15844907407407408,
+                "y": 0.06458333333333334
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "9be5ea50-5a8a-a704-2327-31ad658950ec",
+            "originalFrame": "3ddcde00-3081-c9fb-fd8f-6c4a1c4c8ad3_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661783681681,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.15840277777777778,
+                "y": 0.8904166666666666,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "0d46adea-0d4e-cdcf-05bf-4e55b700bfc3_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.15833333333333333,
+                        "y": 0.8900900900900901
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.999992291132609
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.21840277777777778,
+                "y": 0.9104166666666667
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        }
+    ],
+    "deviceData": {
+        "os": "Android",
+        "abi": "arm64-v8a",
+        "sdk": "29",
+        "osVersion": "10",
+        "size": "1080x2220",
+        "serial": "EMULATOR31X2X10X0",
+        "name": "Android SDK built for arm64",
+        "brand": "Android",
+        "currentRotation": "ROTATION_0",
+        "rotationVars": {
+            "portrait": "ROTATION_0",
+            "landscape": "ROTATION_90",
+            "upsideDown": "ROTATION_180",
+            "seascape": "ROTATION_270"
+        },
+        "isSimulator": true
+    },
+    "createdOn": 1661783651321,
+    "changedOn": 1661783698142,
+    "isWorkingCopy": false,
+    "testRuns": [],
+    "testRunExports": []
+}

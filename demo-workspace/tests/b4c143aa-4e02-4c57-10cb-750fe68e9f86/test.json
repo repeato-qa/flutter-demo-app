@@ -1,0 +1,511 @@
+{
+    "version": 4,
+    "id": "b4c143aa-4e02-4c57-10cb-750fe68e9f86",
+    "title": "API29-Pixel3aScreenTransition",
+    "steps": [
+        {
+            "id": "c36b3b1c-4d8f-e5b5-771a-2966bf635418",
+            "originalFrame": "659c5acc-2d08-4e69-3d50-d2614acb7430_frame.jpg",
+            "type": "waitForDuration",
+            "optional": false,
+            "createdOn": 1662569102431,
+            "duration": 5000
+        },
+        {
+            "id": "1016cf9e-33c4-067c-0e52-6b83bd050d1a",
+            "originalFrame": "5793920e-a1e7-9571-e00b-b3cc4854568b_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563914139,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.042777777777777776,
+                "y": 0.03833333333333333,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "8ff18dde-6bc8-a22d-e7af-d3ebc425c3a0_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.04259259259259259,
+                        "y": 0.038288288288288286
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.10277777777777777,
+                "y": 0.058333333333333334
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "8dbcb017-1518-dd13-1b92-cf194b6ad067",
+            "originalFrame": "d9c28b98-e233-00c5-09ac-a8770e677a1a_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563919513,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7536574074074074,
+                "y": 0.04875,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "9d6b6d7c-756b-8946-2c2e-b064e63c6d57_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7527777777777778,
+                        "y": 0.04864864864864865
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.8136574074074074,
+                "y": 0.06875
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "69497606-7d2e-11c3-b50b-1ef9859b5199",
+            "originalFrame": "092d806f-eee6-7d86-8acb-c67a7a62a0c4_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563927974,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.05562500000000001,
+                "y": 0.04875,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "2703b4bb-e9fc-98dd-2240-8ec8bd512b87_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.05555555555555555,
+                        "y": 0.04864864864864865
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999997172580871
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.115625,
+                "y": 0.06875
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "5ed96766-7421-92ad-b7d2-ac07542f3683",
+            "originalFrame": "8d294739-2519-0085-e9d7-490b27dc0773_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563930194,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7579398148148149,
+                "y": 0.04041666666666667,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "39f386a1-df0e-19b9-d13e-85640b494c15_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 6.938893903907228e-18
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7574074074074074,
+                        "y": 0.04009009009009009
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998736790209
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.8179398148148148,
+                "y": 0.06041666666666667
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "54c393b1-b8ef-4239-cae8-62ee10bb2bc4",
+            "originalFrame": "15c5e6b8-95e3-3712-8ffd-f78b6e9c756b_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563940475,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.8607175925925925,
+                "y": 0.042499999999999996,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "4002a16a-6092-bd8d-c4b9-614a86801c65_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.8601851851851852,
+                        "y": 0.04234234234234234
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.9207175925925926,
+                "y": 0.0625
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "e1b838a7-4f45-2816-f6bd-846a03369614",
+            "originalFrame": "9f23b4aa-833b-61b2-53a5-ec950ae26e00_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563943275,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.5009953703703705,
+                "y": 0.3175,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "7ce8b7c0-60a3-68ac-03f4-457d7b308fa9_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.5009259259259259,
+                        "y": 0.3171171171171171
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999999296950411
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.5609953703703704,
+                "y": 0.3375
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "b49fccde-b668-979e-15e7-8fcf108ff1d8",
+            "originalFrame": "461b81ef-d3b4-f3d2-985a-b80d1dee0e9c_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1662563946308,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7065509259259259,
+                "y": 0.56125,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "d2f565fe-857b-0047-6d24-cc89099a7a9c_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7064814814814815,
+                        "y": 0.5608108108108109
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.7665509259259259,
+                "y": 0.58125
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        }
+    ],
+    "deviceData": {
+        "os": "Android",
+        "abi": "arm64-v8a",
+        "sdk": "29",
+        "osVersion": "10",
+        "size": "1080x2220",
+        "serial": "EMULATOR31X2X10X0",
+        "name": "Android SDK built for arm64",
+        "brand": "Android",
+        "currentRotation": "ROTATION_0",
+        "rotationVars": {
+            "portrait": "ROTATION_0",
+            "landscape": "ROTATION_90",
+            "upsideDown": "ROTATION_180",
+            "seascape": "ROTATION_270"
+        },
+        "isSimulator": true
+    },
+    "createdOn": 1662563908474,
+    "changedOn": 1662569116083,
+    "isWorkingCopy": false,
+    "testRuns": [
+        {
+            "id": "7944536b-bea6-4660-b4c1-014b8b9690f4",
+            "date": 1662564076420,
+            "completed": true,
+            "stepResults": [],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "29",
+                "osVersion": "10",
+                "size": "1080x2220",
+                "serial": "EMULATOR31X2X10X0",
+                "name": "Android SDK built for arm64",
+                "brand": "Android",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 9483,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2022-08-29 20:03:44",
+                    "lastUpdateTime": "2022-08-29 20:03:44"
+                }
+            ],
+            "wasSuccessful": false
+        },
+        {
+            "id": "f33ad428-0772-9e03-1dce-b0ce20c3db8c",
+            "date": 1662564513918,
+            "completed": true,
+            "stepResults": [
+                {
+                    "id": "d8a8423c-0e1a-6cc6-d3b1-1e0a099dacf0",
+                    "step": "1016cf9e-33c4-067c-0e52-6b83bd050d1a",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.04259259259259259,
+                                "y": 0.038288288288288286
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 1
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "0af0ccf9-d5e8-f00a-b9fb-33215e32f19c-screenshot.jpg",
+                    "createdOn": 1662564514315
+                },
+                {
+                    "id": "68957753-bff4-cb29-a4ad-105adfa2897c",
+                    "step": "8dbcb017-1518-dd13-1b92-cf194b6ad067",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.7527777777777778,
+                                "y": 0.04864864864864865
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 1
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "0da743e8-b04f-6229-6b50-718ab954ce40-screenshot.jpg",
+                    "createdOn": 1662564514678
+                },
+                {
+                    "id": "ed099d8c-ad05-4222-6c07-a67cfd11f155",
+                    "step": "69497606-7d2e-11c3-b50b-1ef9859b5199",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.05555555555555555,
+                                "y": 0.04864864864864865
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 0.9999997172580871
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "3af7186e-3e79-fe62-a379-93f807f12f7e-screenshot.jpg",
+                    "createdOn": 1662564526043
+                },
+                {
+                    "id": "efff782c-2389-93ac-3bbe-0bc8fa1bd424",
+                    "step": "5ed96766-7421-92ad-b7d2-ac07542f3683",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.7574074074074074,
+                                "y": 0.04009009009009009
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 0.9999998736790209
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "55444ef8-1443-c26b-7868-ba2d408be49d-screenshot.jpg",
+                    "createdOn": 1662564526631
+                },
+                {
+                    "id": "b2cb7653-99c8-2995-b4cb-02082a973f3a",
+                    "step": "54c393b1-b8ef-4239-cae8-62ee10bb2bc4",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.8601851851851852,
+                                "y": 0.04234234234234234
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 1
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "cb82407a-6bd3-4526-ec22-7eb71270735d-screenshot.jpg",
+                    "createdOn": 1662564527790
+                },
+                {
+                    "id": "33523d7c-ecd8-fd01-dfd7-f810ff062379",
+                    "step": "e1b838a7-4f45-2816-f6bd-846a03369614",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.5009259259259259,
+                                "y": 0.3171171171171171
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 0.9984815187522962
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "897f12da-9642-295d-9228-c5967e07484a-screenshot.jpg",
+                    "createdOn": 1662564528742
+                },
+                {
+                    "id": "e341a8f6-7d8c-de8a-8f34-5b3d27f4fa6a",
+                    "step": "b49fccde-b668-979e-15e7-8fcf108ff1d8",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.7064814814814815,
+                                "y": 0.5608108108108109
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 1
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "screenshot": "d43c6a10-16dd-d8f5-e97b-a3a46feb2c1b-screenshot.jpg",
+                    "createdOn": 1662564528927
+                }
+            ],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "29",
+                "osVersion": "10",
+                "size": "1080x2220",
+                "serial": "EMULATOR31X2X10X0",
+                "name": "Android SDK built for arm64",
+                "brand": "Android",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 15884,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2022-08-29 20:03:44",
+                    "lastUpdateTime": "2022-08-29 20:03:44"
+                }
+            ],
+            "wasSuccessful": true
+        }
+    ],
+    "testRunExports": []
+}

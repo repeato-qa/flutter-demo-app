@@ -1,0 +1,1027 @@
+{
+    "version": 4,
+    "id": "d3298a1b-f550-c391-1525-eb334ac62591",
+    "title": "API29-Pixel3aChrome",
+    "steps": [
+        {
+            "id": "8d3b5e6b-ce44-db03-30e2-6d720b62dcbf",
+            "type": "startApp",
+            "optional": false,
+            "createdOn": 1661538244702,
+            "packageName": "com.android.chrome",
+            "activityName": "org.chromium.chrome.browser.ChromeTabbedActivity",
+            "deleteAppData": false,
+            "grantPermissions": [
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_FINE_LOCATION",
+                "CAMERA",
+                "GET_ACCOUNTS",
+                "READ_CONTACTS",
+                "READ_EXTERNAL_STORAGE",
+                "RECORD_AUDIO",
+                "WRITE_EXTERNAL_STORAGE"
+            ],
+            "allPermissions": [
+                "ACCESS_COARSE_LOCATION",
+                "ACCESS_FINE_LOCATION",
+                "CAMERA",
+                "GET_ACCOUNTS",
+                "READ_CONTACTS",
+                "READ_EXTERNAL_STORAGE",
+                "RECORD_AUDIO",
+                "WRITE_EXTERNAL_STORAGE"
+            ],
+            "os": "Android"
+        },
+        {
+            "id": "71865185-2df2-984d-b15c-de57cf4e4dd3",
+            "originalFrame": "7cb5a9dc-0fed-57e7-f3a3-6d7945175998_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538249939,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.46124517155191996,
+                "y": 0.1681390593047035,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "c555cedb-d49e-e811-68ea-010c83ad9806_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.46111111111111114,
+                        "y": 0.16801801801801802
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998235516045
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.52124517155192,
+                "y": 0.18813905930470348
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "611dd145-2676-14c3-4abb-29863bdbe55a",
+            "originalFrame": "a43e1d4b-67c3-caf2-2f29-f7cc8d2163bd_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538254020,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.39819132015451036,
+                "y": 0.28265848670756644,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "979b5a04-9e93-4419-8a68-1b4e6cf7f763_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.39814814814814814,
+                        "y": 0.28243243243243243
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.45819132015451036,
+                "y": 0.30265848670756645
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "ac048272-3741-0685-fcb5-b37a3459889c",
+            "originalFrame": "59f13730-71f0-6fc9-076c-524b107dffc8_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538257182,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.04088616223585549,
+                "y": 0.7591411042944786,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "8da98d5a-2ad5-feda-315f-2bb1cb607569_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.040740740740740744,
+                        "y": 0.759009009009009
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998943362035
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.10088616223585549,
+                "y": 0.7791411042944786
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "9fb8a5cc-f6b7-50ce-d6d9-7c846a2a1d6b",
+            "originalFrame": "ca1f9de6-856f-c09b-b2d2-7410a4a11b82_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538258718,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.5495205635082936,
+                "y": 0.7652760736196319,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "3de2aeab-4a83-9c48-5f04-bcaf4f8b2cdb_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.549074074074074,
+                        "y": 0.7648648648648648
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998706730935
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.6095205635082935,
+                "y": 0.7852760736196319
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "50affe4c-fa7d-3b5a-3b5e-d2af61984d75",
+            "originalFrame": "22eeb1a5-d284-0953-5b62-4edcc9bd4f41_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538260133,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7428857077936832,
+                "y": 0.8204907975460123,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "660e40d4-97bf-e02b-5de4-e549fe4b8442_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7425925925925926,
+                        "y": 0.8202702702702702
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998466310842
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.8028857077936832,
+                "y": 0.8404907975460123
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "7fbe3179-b793-dcbf-d864-9a47603e0abc",
+            "originalFrame": "36f6d9b2-043f-54ab-ab02-498456ee752c_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538261816,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.03668257214269484,
+                "y": 0.7632310838445808,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "a5413370-c9b3-3151-a0bb-47bbbe333ad3_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.03611111111111111,
+                        "y": 0.763063063063063
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999999397230539
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.09668257214269484,
+                "y": 0.7832310838445808
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "0dd8309b-48b5-b5d3-75f3-3ba4fe39b66b",
+            "originalFrame": "d2544328-2c3e-7e94-f37c-899dfe14e55a_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538263193,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.23845489661440583,
+                "y": 0.7570961145194275,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "a15a420e-6f12-2b7f-8f75-4674238c1424_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.23796296296296296,
+                        "y": 0.7567567567567568
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999999872025297
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.29845489661440583,
+                "y": 0.7770961145194275
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "8a9a4827-7202-e3c8-fe05-d5daeb767d97",
+            "originalFrame": "e105b9b2-e4dc-4e55-0b63-8413154faa88_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538264636,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.42761645080663485,
+                "y": 0.8879754601226993,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "3c4408dd-6751-8113-dd8f-47a16eb95e45_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9551640387741873
+                },
+                {
+                    "position": {
+                        "x": 0.09259259259259259,
+                        "y": 0.013513513513513514
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9749361802246641
+                },
+                {
+                    "position": {
+                        "x": 0.14814814814814814,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.1962962962962963,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9875812757182282
+                },
+                {
+                    "position": {
+                        "x": 0.2462962962962963,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.2518518518518518,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.2518518518518518,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9509668919747223
+                },
+                {
+                    "position": {
+                        "x": 0.3,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.34814814814814815,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.34814814814814815,
+                        "y": 0.055855855855855854
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.35555555555555557,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.35555555555555557,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.39814814814814814,
+                        "y": 0.013513513513513514
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.40370370370370373,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.45,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.45,
+                        "y": 0.055855855855855854
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.45925925925925926,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.45925925925925926,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.5,
+                        "y": 0.013513513513513514
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.5074074074074074,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.5518518518518518,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.5518518518518518,
+                        "y": 0.055855855855855854
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.562962962962963,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.562962962962963,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6018518518518519,
+                        "y": 0.013513513513513514
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6111111111111112,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6537037037037037,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6537037037037037,
+                        "y": 0.055855855855855854
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6666666666666666,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.6666666666666666,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.7037037037037037,
+                        "y": 0.013513513513513514
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.7148148148148148,
+                        "y": 0.014414414414414415
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.7166666666666667,
+                        "y": 0.0936936936936937
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.7555555555555555,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9840383300132487
+                },
+                {
+                    "position": {
+                        "x": 0.7666666666666667,
+                        "y": 0.051351351351351354
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.7703703703703704,
+                        "y": 0
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9518912650754
+                },
+                {
+                    "position": {
+                        "x": 0.7703703703703704,
+                        "y": 0.05765765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                },
+                {
+                    "position": {
+                        "x": 0.8203703703703704,
+                        "y": 0.09279279279279279
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.48761645080663485,
+                "y": 0.9079754601226994
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "4642bfa3-4a6f-5813-8178-cb30fa2eba35",
+            "originalFrame": "b11c5bf8-d1af-3c87-7492-2c1be69673d4_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538268247,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.734478527607362,
+                "y": 0.8266257668711656,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "c94a7c9a-7a46-f34c-0eed-bb3a3977ce66_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7342592592592593,
+                        "y": 0.8265765765765766
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998619177669
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.794478527607362,
+                "y": 0.8466257668711656
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "c9c69daf-9034-775c-cde8-72aa497f100a",
+            "originalFrame": "e1d003e4-0749-2979-a835-c94f8bc1bd1e_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538269791,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.6083708248125426,
+                "y": 0.7121063394683026,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "2e5f4ae7-7f7e-39f3-32f1-08bc44e8c5c0_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.6083333333333333,
+                        "y": 0.7117117117117117
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999974966049194
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.6683708248125426,
+                "y": 0.7321063394683026
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "9aaf6bfc-9dfb-38c0-9b32-04df3cea391b",
+            "originalFrame": "54d7e34d-7851-1d6b-2462-6d82a1e1ea39_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538271988,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.7386821177005227,
+                "y": 0.7591411042944786,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "8dc37659-5a8f-cac6-0849-bd77c9101522_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.7379629629629629,
+                        "y": 0.759009009009009
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998974885216
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.7986821177005227,
+                "y": 0.7791411042944786
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "fdeeb94a-e96a-241c-df35-9544c449f94a",
+            "originalFrame": "e7b1cb91-d39d-2f87-bbc8-be779c4e6ffe_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538273444,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.5285026130424904,
+                "y": 0.7673210633946831,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "5ba0c6f7-8b84-d6e4-07b7-17b7908a316a_template.png",
+            "offset": {
+                "x": 1.1102230246251565e-16,
+                "y": 0
+            },
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.5277777777777778,
+                        "y": 0.7671171171171172
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999999147088658
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.5885026130424903,
+                "y": 0.7873210633946831
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "0007671f-3d22-2cba-814b-cd1416456bd9",
+            "originalFrame": "f7150edc-bcc6-ff8a-b6fd-743e04bf56b1_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538274855,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.39819132015451036,
+                "y": 0.6998364008179958,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "db59d309-408c-60e7-1115-69ced9c78a4b_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.39814814814814814,
+                        "y": 0.6995495495495495
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999989668528239
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.45819132015451036,
+                "y": 0.7198364008179958
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "908cc2b4-cb48-cd01-6b25-6bf6be8c7f9b",
+            "originalFrame": "e628bec6-1d17-fb2e-e789-4a8cccbc2ac7_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538276071,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.049293342422176784,
+                "y": 0.7611860940695296,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "fb6ed63a-b6a9-10ba-e903-c298df83dcb8_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.049074074074074076,
+                        "y": 0.7608108108108108
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 1
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.10929334242217678,
+                "y": 0.7811860940695297
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "018f56e5-c430-f623-0a23-953c6f94a0be",
+            "originalFrame": "d8d332c2-c491-70e7-b561-76137a289ef8_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538277347,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.28469438763917293,
+                "y": 0.6998364008179958,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "c2194e83-f87d-bec6-b6fe-fc76e2e45cff_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.28425925925925927,
+                        "y": 0.6995495495495495
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999967416127523
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.34469438763917293,
+                "y": 0.7198364008179958
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        },
+        {
+            "id": "0454b0f1-9522-7738-a436-511dc7064985",
+            "originalFrame": "5a314559-084e-3e5a-5d28-fb2a85149906_frame.jpg",
+            "type": "click",
+            "optional": false,
+            "createdOn": 1661538279297,
+            "matchIndex": 0,
+            "selection": {
+                "x": 0.8689934105885027,
+                "y": 0.8838854805725972,
+                "width": 0.12,
+                "height": 0.04
+            },
+            "image": "afa3b1e5-60a9-5e7b-a5dc-1427e30cf46c_template.png",
+            "matches": [
+                {
+                    "position": {
+                        "x": 0.8685185185185185,
+                        "y": 0.8837837837837837
+                    },
+                    "size": {
+                        "width": 0.11944444444444445,
+                        "height": 0.03963963963963964
+                    },
+                    "probability": 0.9999998410542806
+                }
+            ],
+            "mouseDownPosition": {
+                "x": 0.9289934105885027,
+                "y": 0.9038854805725972
+            },
+            "mouseMoveCoordinates": [],
+            "longClick": false
+        }
+    ],
+    "deviceData": {
+        "os": "Android",
+        "abi": "arm64-v8a",
+        "sdk": "30",
+        "osVersion": "11",
+        "size": "1080x2220",
+        "serial": "EMULATOR31X2X10X0",
+        "name": "sdk_gphone_arm64",
+        "brand": "google",
+        "currentRotation": "ROTATION_0",
+        "rotationVars": {
+            "portrait": "ROTATION_0",
+            "landscape": "ROTATION_90",
+            "upsideDown": "ROTATION_180",
+            "seascape": "ROTATION_270"
+        },
+        "isSimulator": true
+    },
+    "createdOn": 1661538239019,
+    "changedOn": 1661538296163,
+    "isWorkingCopy": false,
+    "testRuns": [],
+    "testRunExports": []
+}
