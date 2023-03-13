@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "tests": [],
   "testBatches": [
     {
@@ -77,35 +77,34 @@
     ]
   },
   "batchRunner": {
-    "testBatch": "0bcb7412-2887-bbe1-8f8f-68fa5a9c5d6e",
+    "testBatch": "0",
     "currentExceptionHandlerIndex": 0,
-    "currentTestIndex": 2,
+    "currentTestIndex": 0,
     "testRunner": {
-      "id": "c04f01b4-fb2c-cc8e-1a1f-2a37ff405ab0",
-      "currentTest": "dc0b529f-a445-158c-e85d-d5ede15d5e2e",
-      "currentStepIndex": 6,
+      "id": "76c59cdb-b79a-9800-f55e-79b4ee85d417",
+      "currentTest": "a489bfef-dcaf-0930-303c-09417dc2edb1",
+      "currentStepIndex": 0,
       "stopExecutionOnStepIndex": -1,
       "defaultSearchTimeout": 8000,
       "subTestRunners": [],
-      "rootTestRunner": "c04f01b4-fb2c-cc8e-1a1f-2a37ff405ab0"
+      "rootTestRunner": "76c59cdb-b79a-9800-f55e-79b4ee85d417"
     },
     "batchRun": {
-      "id": "dbfcf11c-bf9c-96c6-fab1-a01eab9026bc",
-      "batchId": "0bcb7412-2887-bbe1-8f8f-68fa5a9c5d6e",
-      "title": "Batch 2 - Pixel 3a (API 29)",
+      "id": "2de849ee-6bf8-c4b1-5462-f28e47791a4c",
+      "batchId": "0",
+      "title": "Batch 1 - Pixel 3a (API 30)",
       "tests": [
-        "e3c481a7-44cd-66d2-06e5-4e72acba0494",
-        "b4c143aa-4e02-4c57-10cb-750fe68e9f86",
-        "dc0b529f-a445-158c-e85d-d5ede15d5e2e"
+        "a489bfef-dcaf-0930-303c-09417dc2edb1",
+        "2cf8ece4-700c-89ec-5ff6-e7578a7f3b5d"
       ],
       "testRuns": [],
-      "createdOn": 1662569064508,
+      "createdOn": 1678713903189,
       "stats": {
-        "totalCount": 3,
-        "successCount": 3,
-        "duration": "00:00:14",
+        "totalCount": 2,
+        "successCount": 2,
+        "duration": "00:00:15",
         "failCount": 0,
-        "stepsCount": 20
+        "stepsCount": 14
       }
     },
     "exportMaxImageSize": 800
@@ -114,5 +113,7 @@
     "isRecording": false,
     "testDirty": false
   },
-  "schedules": []
+  "schedules": [],
+  "advancedConfig": "",
+  "tags": []
 }
