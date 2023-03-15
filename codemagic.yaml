@@ -36,10 +36,13 @@ workflows:
           --outputDir "./batch-report"
 #      - name: Zip batch report
 #        script: 7z a -r batch-report.zip ./batch-report/*   
-      - name: Copy batch run report
-        script: | 
-          #!/usr/bin/env sh
-          cp  -r ./batch-report $CM_EXPORT_DIR/batch-report
+      
+    publishing:
+      scripts:
+        - name: Copy batch run report
+          script: | 
+            #!/usr/bin/env sh
+            cp  -r ./batch-report $CM_EXPORT_DIR/batch-report
+
     artifacts:
       - build/**/outputs/apk/**/*.apk
-#      - batch-report.zip
