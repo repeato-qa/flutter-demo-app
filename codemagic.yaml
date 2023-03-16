@@ -33,6 +33,7 @@ workflows:
           --logLevel "DEBUG" \
           --batchId 0 \
           --licenseKey "$LICENSE_KEY" \
+          --waitDurationBetweenSteps 10000
           --outputDir "$CM_EXPORT_DIR/batch-report"
 #      - name: Zip batch report
 #        script: 7z a -r batch-report.zip ./batch-report/*   
