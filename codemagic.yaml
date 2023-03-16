@@ -33,16 +33,16 @@ workflows:
           --logLevel "DEBUG" \
           --batchId 0 \
           --licenseKey "$LICENSE_KEY" \
-          --outputDir "./batch-report"
+          --outputDir "$CM_EXPORT_DIR/batch-report"
 #      - name: Zip batch report
 #        script: 7z a -r batch-report.zip ./batch-report/*   
       
     publishing:
       scripts:
-        - name: Copy batch run report
+        - name: List exported files
           script: | 
-            #!/usr/bin/env sh
-            cp  -r ./batch-report $CM_EXPORT_DIR/batch-report
+            ls -la $CM_EXPORT_DIR
+            ls -la $CM_EXPORT_DIR/batch-report
 
     artifacts:
       - build/**/outputs/apk/**/*.apk
