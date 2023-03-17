@@ -48,6 +48,15 @@
             "params": ""
         },
         {
+            "id": "966ee686-3825-d5de-80b1-d1d6ee8c8f81",
+            "type": "execScript",
+            "optional": false,
+            "createdOn": 1679044195036,
+            "directory": "",
+            "script": "deviceConnector.setUtf8SupportEnabled(false)",
+            "language": "js"
+        },
+        {
             "id": "77924e4d-7217-13b8-caf8-8123f37739ec",
             "type": "execScript",
             "optional": false,
@@ -221,7 +230,7 @@
         "isSimulator": false
     },
     "createdOn": 1654630420352,
-    "changedOn": 1679041770701,
+    "changedOn": 1679044315026,
     "isWorkingCopy": false,
     "testRuns": [
         {
@@ -378,31 +387,41 @@
         },
         {
             "id": "257d5ce0-d11d-b1e0-7464-3d1c9c38863e",
-            "date": 1679041752807,
+            "date": 1679044283625,
             "completed": true,
             "stepResults": [
                 {
-                    "id": "75874550-6492-8355-b73f-2a5501ce034f",
+                    "id": "26a86628-34e1-6be3-0deb-734ebe4f287b",
                     "step": "abd33d90-7011-b185-fb23-e71040621fa0",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "24628b6b-76e7-21d1-bb6f-f0d9db45765a-screenshot.jpg",
-                    "createdOn": 1679041754320
+                    "screenshot": "afc9ea90-bae7-5468-fd5d-5a19361361c4-screenshot.jpg",
+                    "createdOn": 1679044285363
                 },
                 {
-                    "id": "0c0f1093-ed49-2e2e-3905-01a6ae9feb02",
+                    "id": "f2ed6145-dfae-da88-49e5-eeb662eb3d3b",
+                    "step": "966ee686-3825-d5de-80b1-d1d6ee8c8f81",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "5e8a473f-ccd9-ef07-b31c-fd1127c5579d-screenshot.jpg",
+                    "createdOn": 1679044285400
+                },
+                {
+                    "id": "35c48e03-5f0b-8a87-5941-f01a91034675",
                     "step": "77924e4d-7217-13b8-caf8-8123f37739ec",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "\n\n\n",
-                    "screenshot": "2509a3bf-eb86-0f8b-052d-2a8c2e3160ed-screenshot.jpg",
-                    "createdOn": 1679041754715
+                    "screenshot": "5acc3b9d-b38a-49c4-e503-1ea52b4e8e2f-screenshot.jpg",
+                    "createdOn": 1679044285783
                 },
                 {
-                    "id": "cb9e7634-3689-250f-a97f-ed5dd8a5147e",
+                    "id": "b0d2c5e4-e06a-8188-9d87-59a70aadc2af",
                     "step": "50277a2e-3916-e822-27bf-30919c8f50aa",
                     "matches": [
                         {
@@ -420,21 +439,21 @@
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "d5a18e36-779a-b369-bdf9-f93604a5b5ff-screenshot.jpg",
-                    "createdOn": 1679041754814
+                    "screenshot": "e963d911-b8ab-0d73-de1f-d78738bf68c4-screenshot.jpg",
+                    "createdOn": 1679044285892
                 },
                 {
-                    "id": "b2293eb4-b844-656f-43ec-59416bf37485",
+                    "id": "24e19b93-b322-ff33-e45a-ad9b7ac78961",
                     "step": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "5bfeb5a1-8435-4c85-cda3-e825e1f1dc10-screenshot.jpg",
-                    "createdOn": 1679041756593
+                    "screenshot": "ecefaf11-b4d5-6c57-d135-ad95e679bf63-screenshot.jpg",
+                    "createdOn": 1679044288284
                 },
                 {
-                    "id": "54b480c8-d10a-dfc9-9a7e-bf4f9e00193e",
+                    "id": "5ad503ab-a05d-107c-8187-f388959adab3",
                     "step": "907cc88f-982b-3f8e-2b0d-05325a5cdcca",
                     "matches": [
                         {
@@ -452,21 +471,21 @@
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "e05f65ed-b109-bd1a-07f0-7af299b44e86-screenshot.jpg",
-                    "createdOn": 1679041756699
+                    "screenshot": "9c5d98a3-b086-5dd6-6346-a6d37c96836b-screenshot.jpg",
+                    "createdOn": 1679044288472
                 },
                 {
-                    "id": "6857a6aa-44a4-6e7d-2331-703caa6c7082",
+                    "id": "f73132bb-f2f7-7515-88cb-befb9487dd75",
                     "step": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "cf714684-cf8d-ff8b-d1df-2c5bf6d2075d-screenshot.jpg",
-                    "createdOn": 1679041758483
+                    "screenshot": "ac6ed685-5498-c55a-f8a9-676d0ab9621a-screenshot.jpg",
+                    "createdOn": 1679044290409
                 },
                 {
-                    "id": "3ec35633-eeab-0328-128d-2461229d72f0",
+                    "id": "02861c39-d0af-92b6-9a87-9f39a5bee06f",
                     "step": "fe8d993e-703a-f471-a5c5-0176029929b2",
                     "matches": [
                         {
@@ -484,11 +503,11 @@
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "fe352f8a-2dd6-f7f6-5b8c-8de4e5936db2-screenshot.jpg",
-                    "createdOn": 1679041758593
+                    "screenshot": "c9b8d6d7-dc6d-0fad-c81f-151f6c4baf9a-screenshot.jpg",
+                    "createdOn": 1679044290614
                 },
                 {
-                    "id": "28fddb48-3781-9738-68c4-6e61a85b29c2",
+                    "id": "011fcbe0-43c5-ae23-8e5f-1406ecc35556",
                     "step": "7af4f2ce-76ea-1a05-32e2-80643ac509ee",
                     "matches": [
                         {
@@ -500,14 +519,14 @@
                                 "width": 0.2222222222222222,
                                 "height": 0.04504504504504504
                             },
-                            "probability": 1
+                            "probability": 0.9957259758741669
                         }
                     ],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "78bc6f58-5f18-f313-32ca-b261fa91e29c-screenshot.jpg",
-                    "createdOn": 1679041761469
+                    "screenshot": "d8c76f03-79eb-7587-c63c-30bb6063d8a4-screenshot.jpg",
+                    "createdOn": 1679044293066
                 }
             ],
             "deviceData": {
@@ -528,8 +547,8 @@
                 },
                 "isSimulator": true
             },
-            "duration": 8959,
-            "appStartupDuration": 226,
+            "duration": 9748,
+            "appStartupDuration": 236,
             "appVersions": [
                 {
                     "packageName": "com.iotecksolutions.todoapp",

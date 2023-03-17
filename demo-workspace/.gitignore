@@ -1,1 +1,5 @@
+
+# Repeato creates backups of your workspace database.rpt file every now and then. It can be excluded from your repo
 backup
+# When you open a test for editing, Repeato creates a working copy of the test directory. There is no use of versioning or syncing that copy. So we execlude it
+*.workingcopy
