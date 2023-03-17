@@ -2,6 +2,7 @@
     "version": 4,
     "id": "a489bfef-dcaf-0930-303c-09417dc2edb1",
     "title": "SimpleLogin",
+    "description": "",
     "steps": [
         {
             "id": "abd33d90-7011-b185-fb23-e71040621fa0",
@@ -43,7 +44,17 @@
                 "reminders",
                 "siri"
             ],
-            "os": "Android"
+            "os": "Android",
+            "params": ""
+        },
+        {
+            "id": "77924e4d-7217-13b8-caf8-8123f37739ec",
+            "type": "execScript",
+            "optional": false,
+            "createdOn": 1679041702766,
+            "directory": "",
+            "script": "$adb shell settings put global window_animation_scale 0\n$adb shell settings put global transition_animation_scale 0\n$adb shell settings put global animator_duration_scale 0",
+            "language": "cli"
         },
         {
             "id": "50277a2e-3916-e822-27bf-30919c8f50aa",
@@ -210,7 +221,7 @@
         "isSimulator": false
     },
     "createdOn": 1654630420352,
-    "changedOn": 1678718252467,
+    "changedOn": 1679041770701,
     "isWorkingCopy": false,
     "testRuns": [
         {
@@ -367,20 +378,31 @@
         },
         {
             "id": "257d5ce0-d11d-b1e0-7464-3d1c9c38863e",
-            "date": 1678722732805,
+            "date": 1679041752807,
             "completed": true,
             "stepResults": [
                 {
-                    "id": "71193d0e-3497-9886-ca16-fb0b4b7604a6",
+                    "id": "75874550-6492-8355-b73f-2a5501ce034f",
                     "step": "abd33d90-7011-b185-fb23-e71040621fa0",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "f662ff7c-d099-cea9-8abf-715dd6f2b054-screenshot.jpg",
-                    "createdOn": 1678722733161
+                    "message": "",
+                    "screenshot": "24628b6b-76e7-21d1-bb6f-f0d9db45765a-screenshot.jpg",
+                    "createdOn": 1679041754320
                 },
                 {
-                    "id": "308011ee-e8c5-c34a-2262-296a00385c42",
+                    "id": "0c0f1093-ed49-2e2e-3905-01a6ae9feb02",
+                    "step": "77924e4d-7217-13b8-caf8-8123f37739ec",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "\n\n\n",
+                    "screenshot": "2509a3bf-eb86-0f8b-052d-2a8c2e3160ed-screenshot.jpg",
+                    "createdOn": 1679041754715
+                },
+                {
+                    "id": "cb9e7634-3689-250f-a97f-ed5dd8a5147e",
                     "step": "50277a2e-3916-e822-27bf-30919c8f50aa",
                     "matches": [
                         {
@@ -392,25 +414,27 @@
                                 "width": 0.11944444444444445,
                                 "height": 0.03963963963963964
                             },
-                            "probability": 0.9932654137697668
+                            "probability": 0.9996066468446761
                         }
                     ],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "9c74d068-e110-1ecc-c8e9-13afbe393de9-screenshot.jpg",
-                    "createdOn": 1678722734310
+                    "message": "",
+                    "screenshot": "d5a18e36-779a-b369-bdf9-f93604a5b5ff-screenshot.jpg",
+                    "createdOn": 1679041754814
                 },
                 {
-                    "id": "5543d881-5a33-7bd5-b326-21fc15e6288e",
+                    "id": "b2293eb4-b844-656f-43ec-59416bf37485",
                     "step": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "619a7813-1a1c-ae27-4a6b-c724192da2be-screenshot.jpg",
-                    "createdOn": 1678722735602
+                    "message": "",
+                    "screenshot": "5bfeb5a1-8435-4c85-cda3-e825e1f1dc10-screenshot.jpg",
+                    "createdOn": 1679041756593
                 },
                 {
-                    "id": "fc2eb123-6569-c8b8-eb7b-486d0099da77",
+                    "id": "54b480c8-d10a-dfc9-9a7e-bf4f9e00193e",
                     "step": "907cc88f-982b-3f8e-2b0d-05325a5cdcca",
                     "matches": [
                         {
@@ -427,20 +451,22 @@
                     ],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "6b7a844a-5bcd-d55f-0470-129582af6c58-screenshot.jpg",
-                    "createdOn": 1678722735756
+                    "message": "",
+                    "screenshot": "e05f65ed-b109-bd1a-07f0-7af299b44e86-screenshot.jpg",
+                    "createdOn": 1679041756699
                 },
                 {
-                    "id": "871b5df5-47d3-ce19-eb02-a7fbdf64aeee",
+                    "id": "6857a6aa-44a4-6e7d-2331-703caa6c7082",
                     "step": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "64473666-1c3b-9cff-6a35-9b0e70e105d9-screenshot.jpg",
-                    "createdOn": 1678722737025
+                    "message": "",
+                    "screenshot": "cf714684-cf8d-ff8b-d1df-2c5bf6d2075d-screenshot.jpg",
+                    "createdOn": 1679041758483
                 },
                 {
-                    "id": "06e65b34-6eba-7bd3-af9a-81f42dd9c3d9",
+                    "id": "3ec35633-eeab-0328-128d-2461229d72f0",
                     "step": "fe8d993e-703a-f471-a5c5-0176029929b2",
                     "matches": [
                         {
@@ -457,11 +483,12 @@
                     ],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "82ebeb46-49ff-3093-b1dd-986cd7e78854-screenshot.jpg",
-                    "createdOn": 1678722737195
+                    "message": "",
+                    "screenshot": "fe352f8a-2dd6-f7f6-5b8c-8de4e5936db2-screenshot.jpg",
+                    "createdOn": 1679041758593
                 },
                 {
-                    "id": "9bfcc420-9389-b462-bfb6-3b411f96ddce",
+                    "id": "28fddb48-3781-9738-68c4-6e61a85b29c2",
                     "step": "7af4f2ce-76ea-1a05-32e2-80643ac509ee",
                     "matches": [
                         {
@@ -478,8 +505,9 @@
                     ],
                     "scaleFactor": 1,
                     "success": true,
-                    "screenshot": "86962085-48b2-1ff8-a986-738afbf95b2d-screenshot.jpg",
-                    "createdOn": 1678722739982
+                    "message": "",
+                    "screenshot": "78bc6f58-5f18-f313-32ca-b261fa91e29c-screenshot.jpg",
+                    "createdOn": 1679041761469
                 }
             ],
             "deviceData": {
@@ -500,8 +528,8 @@
                 },
                 "isSimulator": true
             },
-            "duration": 7235,
-            "appStartupDuration": 407,
+            "duration": 8959,
+            "appStartupDuration": 226,
             "appVersions": [
                 {
                     "packageName": "com.iotecksolutions.todoapp",
