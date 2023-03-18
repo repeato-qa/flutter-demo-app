@@ -48,15 +48,6 @@
             "params": ""
         },
         {
-            "id": "07d49f7c-2e1e-121f-e591-cd0de7ecf952",
-            "type": "execScript",
-            "optional": false,
-            "createdOn": 1679149547144,
-            "directory": "",
-            "script": "$adb shell settings put global window_animation_scale 1\n$adb shell settings put global transition_animation_scale 1\n$adb shell settings put global animator_duration_scale 1",
-            "language": "cli"
-        },
-        {
             "id": "50277a2e-3916-e822-27bf-30919c8f50aa",
             "originalFrame": "f9c924bc-3edb-d343-df5a-b81292757718_frame.jpg",
             "type": "click",
@@ -89,14 +80,6 @@
             },
             "mouseMoveCoordinates": [],
             "longClick": false
-        },
-        {
-            "id": "3521e371-d70f-ec00-c774-264ec0a40bbd",
-            "originalFrame": "1535ce00-ad93-2f48-2c83-d48320754492_frame.jpg",
-            "type": "waitForDuration",
-            "optional": false,
-            "createdOn": 1679149523977,
-            "duration": 20000
         },
         {
             "id": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
@@ -138,14 +121,6 @@
             },
             "mouseMoveCoordinates": [],
             "longClick": false
-        },
-        {
-            "id": "54ac0da9-1dfe-612e-795a-478a498c4fd3",
-            "originalFrame": "fe61187b-e507-963d-910b-41a804266f96_frame.jpg",
-            "type": "waitForDuration",
-            "optional": false,
-            "createdOn": 1679149566465,
-            "duration": 20000
         },
         {
             "id": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
@@ -237,209 +212,140 @@
         "isSimulator": false
     },
     "createdOn": 1654630420352,
-    "changedOn": 1679149569356,
+    "changedOn": 1679076118102,
     "isWorkingCopy": false,
     "testRuns": [
         {
-            "id": "8f0f4271-d423-1b5b-2ed0-6bc55758a736",
-            "date": 1678718505265,
-            "completed": true,
-            "stepResults": [],
-            "deviceData": {
-                "os": "Android",
-                "abi": "arm64-v8a",
-                "sdk": "30",
-                "osVersion": "11",
-                "size": "1080x2220",
-                "serial": "EMULATOR32X1X11X0",
-                "name": "sdk_gphone_arm64",
-                "brand": "google",
-                "currentRotation": "ROTATION_0",
-                "rotationVars": {
-                    "portrait": "ROTATION_0",
-                    "landscape": "ROTATION_90",
-                    "upsideDown": "ROTATION_180",
-                    "seascape": "ROTATION_270"
-                },
-                "isSimulator": true
-            },
-            "duration": 7491,
-            "appStartupDuration": 240,
-            "appVersions": [
-                {
-                    "packageName": "com.iotecksolutions.todoapp",
-                    "name": "1.0.0",
-                    "code": 2001,
-                    "minSdk": 16,
-                    "targetSdk": 28,
-                    "firstInstallTime": "2023-03-13 14:12:50",
-                    "lastUpdateTime": "2023-03-13 14:13:34"
-                }
-            ],
-            "wasSuccessful": true
-        },
-        {
-            "id": "a9855822-7dcf-3c21-6824-9c64f727709c",
-            "date": 1678718533827,
-            "completed": true,
-            "stepResults": [],
-            "deviceData": {
-                "os": "Android",
-                "abi": "arm64-v8a",
-                "sdk": "30",
-                "osVersion": "11",
-                "size": "1080x2220",
-                "serial": "EMULATOR32X1X11X0",
-                "name": "sdk_gphone_arm64",
-                "brand": "google",
-                "currentRotation": "ROTATION_0",
-                "rotationVars": {
-                    "portrait": "ROTATION_0",
-                    "landscape": "ROTATION_90",
-                    "upsideDown": "ROTATION_180",
-                    "seascape": "ROTATION_270"
-                },
-                "isSimulator": true
-            },
-            "duration": 7702,
-            "appStartupDuration": 238,
-            "appVersions": [
-                {
-                    "packageName": "com.iotecksolutions.todoapp",
-                    "name": "1.0.0",
-                    "code": 2001,
-                    "minSdk": 16,
-                    "targetSdk": 28,
-                    "firstInstallTime": "2023-03-13 14:12:50",
-                    "lastUpdateTime": "2023-03-13 14:13:34"
-                }
-            ],
-            "wasSuccessful": true
-        },
-        {
-            "id": "dbd323d4-5e61-c4ac-8698-b856e6468646",
-            "date": 1678719326391,
-            "completed": true,
-            "stepResults": [],
-            "deviceData": {
-                "os": "Android",
-                "abi": "arm64-v8a",
-                "sdk": "30",
-                "osVersion": "11",
-                "size": "1080x2220",
-                "serial": "EMULATOR32X1X11X0",
-                "name": "sdk_gphone_arm64",
-                "brand": "google",
-                "currentRotation": "ROTATION_0",
-                "rotationVars": {
-                    "portrait": "ROTATION_0",
-                    "landscape": "ROTATION_90",
-                    "upsideDown": "ROTATION_180",
-                    "seascape": "ROTATION_270"
-                },
-                "isSimulator": true
-            },
-            "duration": 7344,
-            "appStartupDuration": 266,
-            "appVersions": [
-                {
-                    "packageName": "com.iotecksolutions.todoapp",
-                    "name": "1.0.0",
-                    "code": 2001,
-                    "minSdk": 16,
-                    "targetSdk": 28,
-                    "firstInstallTime": "2023-03-13 14:12:50",
-                    "lastUpdateTime": "2023-03-13 14:13:34"
-                }
-            ],
-            "wasSuccessful": true
-        },
-        {
-            "id": "257d5ce0-d11d-b1e0-7464-3d1c9c38863e",
-            "date": 1679044283625,
-            "completed": true,
-            "stepResults": [
-                {
-                    "id": "26a86628-34e1-6be3-0deb-734ebe4f287b",
-                    "step": "abd33d90-7011-b185-fb23-e71040621fa0",
-                    "matches": [],
-                    "scaleFactor": 1,
-                    "success": true,
-                    "message": "",
-                    "screenshot": "afc9ea90-bae7-5468-fd5d-5a19361361c4-screenshot.jpg",
-                    "createdOn": 1679044285363
-                },
-                {
-                    "id": "24e19b93-b322-ff33-e45a-ad9b7ac78961",
-                    "step": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
-                    "matches": [],
-                    "scaleFactor": 1,
-                    "success": true,
-                    "message": "",
-                    "screenshot": "ecefaf11-b4d5-6c57-d135-ad95e679bf63-screenshot.jpg",
-                    "createdOn": 1679044288284
-                },
-                {
-                    "id": "f73132bb-f2f7-7515-88cb-befb9487dd75",
-                    "step": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
-                    "matches": [],
-                    "scaleFactor": 1,
-                    "success": true,
-                    "message": "",
-                    "screenshot": "ac6ed685-5498-c55a-f8a9-676d0ab9621a-screenshot.jpg",
-                    "createdOn": 1679044290409
-                }
-            ],
-            "deviceData": {
-                "os": "Android",
-                "abi": "arm64-v8a",
-                "sdk": "30",
-                "osVersion": "11",
-                "size": "1080x2220",
-                "serial": "EMULATOR32X1X11X0",
-                "name": "sdk_gphone_arm64",
-                "brand": "google",
-                "currentRotation": "ROTATION_0",
-                "rotationVars": {
-                    "portrait": "ROTATION_0",
-                    "landscape": "ROTATION_90",
-                    "upsideDown": "ROTATION_180",
-                    "seascape": "ROTATION_270"
-                },
-                "isSimulator": true
-            },
-            "duration": 9748,
-            "appStartupDuration": 236,
-            "appVersions": [
-                {
-                    "packageName": "com.iotecksolutions.todoapp",
-                    "name": "1.0.0",
-                    "code": 2001,
-                    "minSdk": 16,
-                    "targetSdk": 28,
-                    "firstInstallTime": "2023-03-13 14:12:50",
-                    "lastUpdateTime": "2023-03-13 14:13:34"
-                }
-            ],
-            "wasSuccessful": true
-        },
-        {
             "id": "d2d36806-1a02-85d0-3f7d-33bfda82f1b7",
-            "date": 1679084457378,
+            "date": 1679076092667,
+            "completed": true,
+            "stepResults": [],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "30",
+                "osVersion": "11",
+                "size": "1080x2220",
+                "serial": "EMULATOR32X1X11X0",
+                "name": "sdk_gphone_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 17071,
+            "appStartupDuration": 304,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2023-03-13 14:12:50",
+                    "lastUpdateTime": "2023-03-13 14:13:34"
+                }
+            ],
+            "wasSuccessful": false
+        },
+        {
+            "id": "4bc5381a-5133-6a5d-e2f9-3609bdb44cf7",
+            "date": 1679145017564,
+            "completed": true,
+            "stepResults": [],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "30",
+                "osVersion": "11",
+                "size": "1080x2220",
+                "serial": "EMULATOR32X1X11X0",
+                "name": "sdk_gphone_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 8544,
+            "appStartupDuration": 636,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2023-03-13 14:12:50",
+                    "lastUpdateTime": "2023-03-13 14:13:34"
+                }
+            ],
+            "wasSuccessful": true
+        },
+        {
+            "id": "67727a2b-cd51-0be3-a39d-275aff1e928b",
+            "date": 1679145184801,
+            "completed": true,
+            "stepResults": [],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "30",
+                "osVersion": "11",
+                "size": "1080x2220",
+                "serial": "EMULATOR32X1X11X0",
+                "name": "sdk_gphone_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 8019,
+            "appStartupDuration": 387,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2023-03-13 14:12:50",
+                    "lastUpdateTime": "2023-03-13 14:13:34"
+                }
+            ],
+            "wasSuccessful": true
+        },
+        {
+            "id": "218aa0c8-cdb6-173a-0e1c-21754302a8e1",
+            "date": 1679146478031,
             "completed": true,
             "stepResults": [
                 {
-                    "id": "c703a21b-1373-0046-d92d-43a62fa12941",
+                    "id": "24b3788e-3b6f-0e79-c076-74ea8005dcf5",
                     "step": "abd33d90-7011-b185-fb23-e71040621fa0",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "b3164cd6-7542-ae87-a4c9-ad9c62ec698d-screenshot.jpg",
-                    "createdOn": 1679084459505
+                    "screenshot": "776f0174-34d0-b364-1035-967f020bf3a2-screenshot.jpg",
+                    "createdOn": 1679146478816
                 },
                 {
-                    "id": "ac2380db-52fc-70e0-5968-50022d27be9a",
+                    "id": "8cba1ab4-d5e1-2c73-0476-6e5d74415357",
                     "step": "50277a2e-3916-e822-27bf-30919c8f50aa",
                     "matches": [
                         {
@@ -451,27 +357,27 @@
                                 "width": 0.11944444444444445,
                                 "height": 0.03963963963963964
                             },
-                            "probability": 1
+                            "probability": 0.9988920395766668
                         }
                     ],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "2e23ceca-b34d-e506-2206-d73aed381a09-screenshot.jpg",
-                    "createdOn": 1679084460288
+                    "screenshot": "9e333b62-8938-c728-8e28-50e0d76d407b-screenshot.jpg",
+                    "createdOn": 1679146480034
                 },
                 {
-                    "id": "4b03ec9d-2ae6-2b0d-9bd4-d1cff576417e",
+                    "id": "3727120c-6fed-14af-70db-a6f294f5c1c7",
                     "step": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "ccb18f25-1fc4-6181-4f6f-ed901df9de0d-screenshot.jpg",
-                    "createdOn": 1679084461578
+                    "screenshot": "763e4559-4e5e-26be-4a00-63ebd9400e79-screenshot.jpg",
+                    "createdOn": 1679146481265
                 },
                 {
-                    "id": "a5311a8a-0e74-58b3-d791-4a79d9c8a4bd",
+                    "id": "130962ba-6692-655e-6295-861dc91ab3d7",
                     "step": "907cc88f-982b-3f8e-2b0d-05325a5cdcca",
                     "matches": [
                         {
@@ -483,27 +389,27 @@
                                 "width": 0.11944444444444445,
                                 "height": 0.03963963963963964
                             },
-                            "probability": 0.9919624913862449
+                            "probability": 0.9919475504886212
                         }
                     ],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "8621a709-0fb1-8bad-86ac-440df7012b3c-screenshot.jpg",
-                    "createdOn": 1679084461816
+                    "screenshot": "f9d948a0-ed08-8b21-1254-7b8f663fe0ce-screenshot.jpg",
+                    "createdOn": 1679146481470
                 },
                 {
-                    "id": "7402da30-9156-c1cb-04e9-bddb1da7147f",
+                    "id": "8c441b99-fc26-3ae2-d904-29b17ca72f8a",
                     "step": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
                     "matches": [],
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "9fadb66c-b53e-8290-481d-446b283c1d2c-screenshot.jpg",
-                    "createdOn": 1679084463081
+                    "screenshot": "41e0b834-6f20-6ada-5a39-b30245111999-screenshot.jpg",
+                    "createdOn": 1679146482698
                 },
                 {
-                    "id": "01a5df55-3b3f-5062-2ca5-1f385eb4c35e",
+                    "id": "c16131d3-87a3-31e3-4c49-c0a057af6a0d",
                     "step": "fe8d993e-703a-f471-a5c5-0176029929b2",
                     "matches": [
                         {
@@ -521,11 +427,11 @@
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "c08c4bda-2aa7-a2a4-98ac-9ed48680c313-screenshot.jpg",
-                    "createdOn": 1679084463238
+                    "screenshot": "20a8952b-8096-40f1-5986-c57035dd63ba-screenshot.jpg",
+                    "createdOn": 1679146482912
                 },
                 {
-                    "id": "030c656d-12a7-d3f3-a388-8cb3c333249e",
+                    "id": "a26f9a22-f65f-799a-6042-f2b9bcc2430c",
                     "step": "7af4f2ce-76ea-1a05-32e2-80643ac509ee",
                     "matches": [
                         {
@@ -543,8 +449,8 @@
                     "scaleFactor": 1,
                     "success": true,
                     "message": "",
-                    "screenshot": "353c8b2a-d5d1-19c3-9181-97ccac226e65-screenshot.jpg",
-                    "createdOn": 1679084465972
+                    "screenshot": "64f7169e-2d94-8cec-697d-312271b9d912-screenshot.jpg",
+                    "createdOn": 1679146485732
                 }
             ],
             "deviceData": {
@@ -565,8 +471,165 @@
                 },
                 "isSimulator": true
             },
-            "duration": 8948,
-            "appStartupDuration": 295,
+            "duration": 8197,
+            "appStartupDuration": 421,
+            "appVersions": [
+                {
+                    "packageName": "com.iotecksolutions.todoapp",
+                    "name": "1.0.0",
+                    "code": 2001,
+                    "minSdk": 16,
+                    "targetSdk": 28,
+                    "firstInstallTime": "2023-03-13 14:12:50",
+                    "lastUpdateTime": "2023-03-13 14:13:34"
+                }
+            ],
+            "wasSuccessful": true
+        },
+        {
+            "id": "d386d7db-4277-c0e7-4dce-67aaf6d72cd5",
+            "date": 1679149448448,
+            "completed": true,
+            "stepResults": [
+                {
+                    "id": "34001bb1-f58a-008e-ce94-76e4e95bf759",
+                    "step": "abd33d90-7011-b185-fb23-e71040621fa0",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "24c6d3fb-1569-2caf-0401-4a0614374063-screenshot.jpg",
+                    "createdOn": 1679149449501
+                },
+                {
+                    "id": "4f2055d7-0c92-cc4e-6539-af41a08b5898",
+                    "step": "50277a2e-3916-e822-27bf-30919c8f50aa",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.22407407407407406,
+                                "y": 0.42792792792792794
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 1
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "cc7fc986-0e3e-9f0c-584c-0bad50cc70b0-screenshot.jpg",
+                    "createdOn": 1679149459648
+                },
+                {
+                    "id": "4c6d43a5-f681-ba8d-ae8d-3e47d2931ed1",
+                    "step": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "1ed8f56d-a138-82ed-79a7-d29d49cbe0d0-screenshot.jpg",
+                    "createdOn": 1679149471311
+                },
+                {
+                    "id": "ff8a965a-7a73-af34-2dd5-c3975d1710ac",
+                    "step": "907cc88f-982b-3f8e-2b0d-05325a5cdcca",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.19814814814814816,
+                                "y": 0.3554054054054054
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 0.9919624913862449
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "577b84d6-cd93-11cb-9b6a-df7e0367176a-screenshot.jpg",
+                    "createdOn": 1679149481863
+                },
+                {
+                    "id": "54c988a4-65f1-5332-697e-0ed5e37c23b4",
+                    "step": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
+                    "matches": [],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "06504daf-11ec-4c19-963b-3e5cb20bd702-screenshot.jpg",
+                    "createdOn": 1679149493101
+                },
+                {
+                    "id": "fda22a3d-df8c-480a-1a96-8289daab40ab",
+                    "step": "fe8d993e-703a-f471-a5c5-0176029929b2",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.4305555555555556,
+                                "y": 0.4752252252252252
+                            },
+                            "size": {
+                                "width": 0.11944444444444445,
+                                "height": 0.03963963963963964
+                            },
+                            "probability": 0.9738519922093225
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "7392fe96-5b29-5328-fafa-2a67f2275f72-screenshot.jpg",
+                    "createdOn": 1679149503282
+                },
+                {
+                    "id": "fdaf1c99-fcd0-a950-56b7-8aaf1d05e06a",
+                    "step": "7af4f2ce-76ea-1a05-32e2-80643ac509ee",
+                    "matches": [
+                        {
+                            "position": {
+                                "x": 0.001851851851851852,
+                                "y": 0.03918918918918919
+                            },
+                            "size": {
+                                "width": 0.2222222222222222,
+                                "height": 0.04504504504504504
+                            },
+                            "probability": 0.9999993642171224
+                        }
+                    ],
+                    "scaleFactor": 1,
+                    "success": true,
+                    "message": "",
+                    "screenshot": "82b097cf-8f5e-927c-c531-f621075e3c6a-screenshot.jpg",
+                    "createdOn": 1679149513461
+                }
+            ],
+            "deviceData": {
+                "os": "Android",
+                "abi": "arm64-v8a",
+                "sdk": "30",
+                "osVersion": "11",
+                "size": "1080x2220",
+                "serial": "EMULATOR32X1X11X0",
+                "name": "sdk_gphone_arm64",
+                "brand": "google",
+                "currentRotation": "ROTATION_0",
+                "rotationVars": {
+                    "portrait": "ROTATION_0",
+                    "landscape": "ROTATION_90",
+                    "upsideDown": "ROTATION_180",
+                    "seascape": "ROTATION_270"
+                },
+                "isSimulator": true
+            },
+            "duration": 65498,
+            "appStartupDuration": 267,
             "appVersions": [
                 {
                     "packageName": "com.iotecksolutions.todoapp",

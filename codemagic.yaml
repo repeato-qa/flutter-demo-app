@@ -1,6 +1,6 @@
 workflows:
   build-and-test-android-workflow:
-    name: Build and Test Workflow
+    name: Build Workflow
     instance_type: linux_x2
     max_build_duration: 120
     environment:
@@ -18,37 +18,12 @@ workflows:
         script: flutter packages pub get
       - name: Build apk with Flutter
         script: flutter build apk
-      - name: Launch emulator
-        script: |
-          emulator @emulator &  # Use `emulator -list-avds` to list all emulators
-          adb wait-for-device # wait for the emulator to finish loading
-      - name: Install app
-        script: |
-          adb install build/app/outputs/apk/release/app-release.apk
-      - name: Wait for 1 minute
-        script: sleep $((20*1))
-      - name: Run Repeato tests
-        script: |
-          npx @repeato/cli-testrunner \
-          --workspaceDir "demo-workspace" \
-          --logLevel "DEBUG" \
-          --batchId 0 \
-          --licenseKey "$LICENSE_KEY" \
-          --waitDurationBetweenSteps 10000 \
-          --outputDir "$CM_EXPORT_DIR/batch-report"
-#      - name: Zip batch report
-#        script: 7z a -r batch-report.zip ./batch-report/*   
-      
+   
     publishing:
       scripts:
         - name: List exported files
           script: | 
             ls -la $CM_EXPORT_DIR
-            ls -la $CM_EXPORT_DIR/batch-report
-        - name: Publish to S3 bucket
-          script: | 
-            sudo pip3 install awscli --upgrade
-            aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo
 
     artifacts:
       - build/**/outputs/apk/**/*.apk
@@ -84,7 +59,7 @@ workflows:
           --logLevel "DEBUG" \
           --batchId 0 \
           --licenseKey "$LICENSE_KEY" \
-          --waitDurationBetweenSteps 10000 \
+          --waitDurationBetweenSteps 2000 \
           --outputDir "$CM_EXPORT_DIR/batch-report"
 #      - name: Zip batch report
 #        script: 7z a -r batch-report.zip ./batch-report/*   
@@ -98,4 +73,4 @@ workflows:
         - name: Publish to S3 bucket
           script: | 
             sudo pip3 install awscli --upgrade
-            aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo
+            aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo/batch-report
