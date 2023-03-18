@@ -74,3 +74,11 @@ workflows:
           script: | 
             sudo pip3 install awscli --upgrade
             aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo/batch-report
+            echo "open report here: https://repeato-batch-result-demo.s3.eu-central-1.amazonaws.com/batch-report/index.html"
+
+      slack:
+        channel: '#dev'
+        notify_on_build_start: true # To receive a notification when a build starts
+        notify:
+          success: true 
+          failure: true 
