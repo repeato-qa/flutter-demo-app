@@ -45,6 +45,10 @@ workflows:
           script: | 
             ls -la $CM_EXPORT_DIR
             ls -la $CM_EXPORT_DIR/batch-report
+        - name: Publish to S3 bucket
+          script: | 
+            sudo pip3 install awscli --upgrade
+            aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo
 
     artifacts:
       - build/**/outputs/apk/**/*.apk
@@ -91,4 +95,7 @@ workflows:
           script: | 
             ls -la $CM_EXPORT_DIR
             ls -la $CM_EXPORT_DIR/batch-report
-
+        - name: Publish to S3 bucket
+          script: | 
+            sudo pip3 install awscli --upgrade
+            aws s3 sync "$CM_EXPORT_DIR/batch-report" s3://repeato-batch-result-demo
