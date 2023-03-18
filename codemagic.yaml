@@ -1,13 +1,14 @@
 workflows:
-  android-workflow:
-    name: Android Workflow
+  build-and-test-android-workflow:
+    name: Build and Test Workflow
     instance_type: linux_x2
     max_build_duration: 120
     environment:
       node: 16.19.0
       flutter: 3.0.1
-      vars:
-        LICENSE_KEY: "unlimited82eac20c3f31aa0d3d"
+      groups:
+        - standard
+
     scripts:
       - name: Set up local.properties
         script: |
@@ -47,3 +48,47 @@ workflows:
 
     artifacts:
       - build/**/outputs/apk/**/*.apk
+
+  test-android-workflow:
+    name: Test Workflow
+    instance_type: linux_x2
+    max_build_duration: 120
+    environment:
+      node: 16.19.0
+      flutter: 3.0.1
+      groups:
+        - standard
+
+    scripts:
+      - name: Set up local.properties
+        script: |
+          #!/usr/bin/env zsh 
+          echo "flutter.sdk=$HOME/programs/flutter" > "$CM_BUILD_DIR/android/local.properties"      
+      - name: Launch emulator
+        script: |
+          emulator @emulator &  # Use `emulator -list-avds` to list all emulators
+          adb wait-for-device # wait for the emulator to finish loading
+      - name: Install app
+        script: |
+          adb install app.apk
+      - name: Wait for 20 seconds
+        script: sleep $((20*1))
+      - name: Run Repeato tests
+        script: |
+          npx @repeato/cli-testrunner \
+          --workspaceDir "demo-workspace" \
+          --logLevel "DEBUG" \
+          --batchId 0 \
+          --licenseKey "$LICENSE_KEY" \
+          --waitDurationBetweenSteps 10000 \
+          --outputDir "$CM_EXPORT_DIR/batch-report"
+#      - name: Zip batch report
+#        script: 7z a -r batch-report.zip ./batch-report/*   
+      
+    publishing:
+      scripts:
+        - name: List exported files
+          script: | 
+            ls -la $CM_EXPORT_DIR
+            ls -la $CM_EXPORT_DIR/batch-report
+
