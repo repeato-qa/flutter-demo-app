@@ -91,19 +91,19 @@
             "longClick": false
         },
         {
+            "id": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
+            "type": "text",
+            "optional": false,
+            "createdOn": 1654630447725,
+            "text": "ahmedmukhtar1133@gmail.com"
+        },
+        {
             "id": "3521e371-d70f-ec00-c774-264ec0a40bbd",
             "originalFrame": "1535ce00-ad93-2f48-2c83-d48320754492_frame.jpg",
             "type": "waitForDuration",
             "optional": false,
             "createdOn": 1679149523977,
             "duration": 20000
-        },
-        {
-            "id": "408fcf51-a964-cc81-6ebc-7d70f44f2caf",
-            "type": "text",
-            "optional": false,
-            "createdOn": 1654630447725,
-            "text": "ahmedmukhtar1133@gmail.com"
         },
         {
             "id": "907cc88f-982b-3f8e-2b0d-05325a5cdcca",
@@ -140,19 +140,19 @@
             "longClick": false
         },
         {
+            "id": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
+            "type": "text",
+            "optional": false,
+            "createdOn": 1654630473322,
+            "text": "testtest"
+        },
+        {
             "id": "54ac0da9-1dfe-612e-795a-478a498c4fd3",
             "originalFrame": "fe61187b-e507-963d-910b-41a804266f96_frame.jpg",
             "type": "waitForDuration",
             "optional": false,
             "createdOn": 1679149566465,
             "duration": 20000
-        },
-        {
-            "id": "c1d3e9c0-767d-a829-3ad4-d38009de6c7a",
-            "type": "text",
-            "optional": false,
-            "createdOn": 1654630473322,
-            "text": "testtest"
         },
         {
             "id": "fe8d993e-703a-f471-a5c5-0176029929b2",
@@ -237,7 +237,7 @@
         "isSimulator": false
     },
     "createdOn": 1654630420352,
-    "changedOn": 1679149569356,
+    "changedOn": 1679150305902,
     "isWorkingCopy": false,
     "testRuns": [
         {
