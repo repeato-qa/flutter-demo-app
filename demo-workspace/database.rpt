@@ -81,11 +81,13 @@
     "currentExceptionHandlerIndex": 0,
     "currentTestIndex": 0,
     "testRunner": {
-      "id": "808276e1-60e6-af01-4899-a05d9116b7d1",
+      "id": "a6fc0c69-6d0b-6212-9a0b-ea4c6190b6b1",
+      "currentTest": "a489bfef-dcaf-0930-303c-09417dc2edb1",
       "currentStepIndex": 0,
       "stopExecutionOnStepIndex": -1,
       "defaultSearchTimeout": 8000,
-      "subTestRunners": []
+      "subTestRunners": [],
+      "rootTestRunner": "a6fc0c69-6d0b-6212-9a0b-ea4c6190b6b1"
     },
     "batchRun": {
       "id": "2de849ee-6bf8-c4b1-5462-f28e47791a4c",

@@ -1,5 +1,5 @@
 workflows:
-  build-and-test-android-workflow:
+  build-workflow:
     name: Build Workflow
     instance_type: linux_x2
     max_build_duration: 120
