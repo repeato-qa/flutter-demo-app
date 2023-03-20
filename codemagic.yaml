@@ -61,8 +61,6 @@ workflows:
           --licenseKey "$LICENSE_KEY" \
           --waitDurationBetweenSteps 2000 \
           --outputDir "$CM_EXPORT_DIR/batch-report"
-#      - name: Zip batch report
-#        script: 7z a -r batch-report.zip ./batch-report/*   
       
     publishing:
       scripts:
@@ -78,7 +76,7 @@ workflows:
 
       slack:
         channel: '#dev'
-        notify_on_build_start: true # To receive a notification when a build starts
+        notify_on_build_start: false # To receive a notification when a build starts
         notify:
           success: true 
           failure: true 

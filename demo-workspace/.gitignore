@@ -3,3 +3,4 @@
 backup
 # When you open a test for editing, Repeato creates a working copy of the test directory. There is no use of versioning or syncing that copy. So we execlude it
 *.workingcopy
+batchRuns
