@@ -60,6 +60,7 @@ workflows:
           --batchId 0 \
           --licenseKey "$LICENSE_KEY" \
           --waitDurationBetweenSteps 2000 \
+          --timeoutFactor 1.5 \
           --outputDir "$CM_EXPORT_DIR/batch-report"
       
     publishing:
