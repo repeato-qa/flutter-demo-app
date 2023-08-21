@@ -1,12 +1,12 @@
 {
   "pins" : [
     {
-      "identity" : "repeatocapture",
+      "identity" : "ios-connector",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stoefln/RepeatoCapture",
+      "location" : "https://github.com/repeato-qa/ios-connector",
       "state" : {
-        "branch" : "main",
-        "revision" : "ea00f2e735ee5a1dcf8d3260257769db121ee64c"
+        "revision" : "4089043316a44ed474fda28709b38f936f545298",
+        "version" : "1.2.3"
       }
     }
   ],
