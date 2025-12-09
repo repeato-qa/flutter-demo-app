@@ -9,16 +9,16 @@ jobs:
 
     steps:
       # Configure Node.js. Version 16 is currently required
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '16'
 
       # Check out the app source code
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Check out the Repeato test workspace. Your tests could also live in the same repository as your app source code. But in this case we decided to have it in it's separate repo.
       - name: Checkout workspace repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: repeato-qa/demo-workspace
           path: workspace-tests
@@ -28,14 +28,14 @@ jobs:
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.0.1'
+          flutter-version: '3.19.0'
           channel: 'stable'
       - run: flutter pub get
       - run: flutter build apk --split-per-abi
 
       # Optional: Add the built apk to the build artifacts
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: release-apk
           path: build/app/outputs/flutter-apk/app-x86_64-release.apk
