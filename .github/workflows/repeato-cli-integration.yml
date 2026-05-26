@@ -92,16 +92,29 @@ jobs:
           script: |
             adb install ./app-x86_64-release.apk
 
-            # Pre-configure Chrome: accept first-run TOS so subsequent launches go straight to new tab page.
-            # Production Chrome ignores /data/local/tmp/chrome-command-line, so we drive the wizard via ADB input.
+            # Pre-configure Chrome: dismiss first-run wizard before Repeato runs.
+            # Production Chrome ignores /data/local/tmp/chrome-command-line (release build),
+            # so we drive the wizard via ADB input taps.
+            mkdir -p "${GITHUB_WORKSPACE}/batch-report"
+            echo "Screen size:" && adb shell wm size | tee "${GITHUB_WORKSPACE}/batch-report/screen-size.txt"
+
             adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
             sleep 4
-            # Tap "Accept & continue" button (center-bottom of 1080x2220 Pixel 3a screen)
-            adb shell input tap 540 1920
+            adb shell screencap -p /sdcard/chrome_start.png
+            adb pull /sdcard/chrome_start.png "${GITHUB_WORKSPACE}/batch-report/chrome_start.png"
+
+            # Tap "Accept & continue" button (center-x=540, y=2050 on 1080x2220 Pixel 3a)
+            adb shell input tap 540 2050
             sleep 3
-            # Dismiss any sign-in / "No thanks" prompt that may follow
-            adb shell input tap 270 1900
+            adb shell screencap -p /sdcard/chrome_after_accept.png
+            adb pull /sdcard/chrome_after_accept.png "${GITHUB_WORKSPACE}/batch-report/chrome_after_accept.png"
+
+            # Dismiss any sign-in / "No thanks" prompt that may follow (left side button)
+            adb shell input tap 270 1980
             sleep 2
+            adb shell screencap -p /sdcard/chrome_after_nothanks.png
+            adb pull /sdcard/chrome_after_nothanks.png "${GITHUB_WORKSPACE}/batch-report/chrome_after_nothanks.png"
+
             # Force-stop Chrome. TOS acceptance is persisted in SharedPreferences,
             # so the next launch (by Repeato's "Start app") skips the wizard.
             adb shell am force-stop com.android.chrome
