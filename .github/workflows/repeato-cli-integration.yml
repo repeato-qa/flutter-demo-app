@@ -79,6 +79,7 @@ jobs:
         uses: reactivecircus/android-emulator-runner@d7b53ddc6e44254e1f4cf4a6ad67345837027a66
         env:
           REPEATO_ACCESS_TOKEN: ${{ secrets.REPEATO_ACCESS_TOKEN }}
+          ANDROID_AVD_HOME: /home/runner/.android/avd
         with:
           api-level: 29
           arch: x86_64
