@@ -91,8 +91,22 @@ jobs:
           disable-animations: true
           script: |
             adb install ./app-x86_64-release.apk
-            # Bypass Chrome first-run wizard so the new tab page (with Google logo) shows instead of the setup screen
-            adb shell 'echo "chrome --disable-fre --no-default-browser-check --no-first-run" > /data/local/tmp/chrome-command-line'
+
+            # Pre-configure Chrome: accept first-run TOS so subsequent launches go straight to new tab page.
+            # Production Chrome ignores /data/local/tmp/chrome-command-line, so we drive the wizard via ADB input.
+            adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
+            sleep 4
+            # Tap "Accept & continue" button (center-bottom of 1080x2220 Pixel 3a screen)
+            adb shell input tap 540 1920
+            sleep 3
+            # Dismiss any sign-in / "No thanks" prompt that may follow
+            adb shell input tap 270 1900
+            sleep 2
+            # Force-stop Chrome. TOS acceptance is persisted in SharedPreferences,
+            # so the next launch (by Repeato's "Start app") skips the wizard.
+            adb shell am force-stop com.android.chrome
+            sleep 1
+
             npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --accessToken "$REPEATO_ACCESS_TOKEN" --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
       # Upload the batch test report (screenshots + results) even on failure, for debugging
