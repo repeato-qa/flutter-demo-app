@@ -31,7 +31,6 @@ final ThemeData themeData = new ThemeData(
     primarySwatch:
         MaterialColor(AppColors.orange[500]!.value, AppColors.orange),
     primaryColor: AppColors.orange[500],
-    accentColor: AppColors.orange[500],
     colorScheme: ColorScheme.fromSwatch(
       primarySwatch:
           MaterialColor(AppColors.orange[500]!.value, AppColors.orange),
@@ -42,7 +41,6 @@ final ThemeData themeDataDark = ThemeData(
   fontFamily: FontFamily.productSans,
   brightness: Brightness.dark,
   primaryColor: AppColors.orange[500],
-  accentColor: AppColors.orange[500],
   colorScheme: ColorScheme.fromSwatch(
     primarySwatch:
         MaterialColor(AppColors.orange[500]!.value, AppColors.orange),
