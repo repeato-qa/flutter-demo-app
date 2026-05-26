@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Configure Node.js. Version 16 is currently required
+      # Configure Node.js. Version 20 required by @repeato/cli-testrunner >= 1.9 (sharp dependency)
       - uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Validate Repeato access token
         env:
