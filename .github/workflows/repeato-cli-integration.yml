@@ -90,37 +90,6 @@ jobs:
           emulator-options: -no-snapshot-save -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
           disable-animations: true
           script: |
-            adb install ./app-x86_64-release.apk
-
-            # Pre-configure Chrome: dismiss first-run wizard before Repeato runs.
-            # Production Chrome ignores /data/local/tmp/chrome-command-line (release build),
-            # so we drive the wizard via ADB input taps.
-            mkdir -p "${GITHUB_WORKSPACE}/batch-report"
-            echo "Screen size:" && adb shell wm size | tee "${GITHUB_WORKSPACE}/batch-report/screen-size.txt"
-
-            adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main
-            sleep 10
-            adb shell screencap -p /sdcard/chrome_start.png
-            adb pull /sdcard/chrome_start.png "${GITHUB_WORKSPACE}/batch-report/chrome_start.png"
-
-            # Tap "Accept & continue" button center at (540, 1940) in 1080x2220 Pixel 3a screen.
-            # Diagnostics confirmed Chrome takes >4s to load; sleep 10 ensures TOS screen is visible.
-            adb shell input tap 540 1940
-            sleep 3
-            adb shell screencap -p /sdcard/chrome_after_accept.png
-            adb pull /sdcard/chrome_after_accept.png "${GITHUB_WORKSPACE}/batch-report/chrome_after_accept.png"
-
-            # Dismiss any sign-in / "No thanks" prompt that may follow (left side button)
-            adb shell input tap 270 1940
-            sleep 2
-            adb shell screencap -p /sdcard/chrome_after_nothanks.png
-            adb pull /sdcard/chrome_after_nothanks.png "${GITHUB_WORKSPACE}/batch-report/chrome_after_nothanks.png"
-
-            # Force-stop Chrome. TOS acceptance is persisted in SharedPreferences,
-            # so the next launch (by Repeato's "Start app") skips the wizard.
-            adb shell am force-stop com.android.chrome
-            sleep 1
-
             npx @repeato/cli-testrunner --workspaceDir "${GITHUB_WORKSPACE}/workspace-tests" --batchId 0 --accessToken "$REPEATO_ACCESS_TOKEN" --outputDir "${GITHUB_WORKSPACE}/batch-report"
 
       # Upload the batch test report (screenshots + results) even on failure, for debugging
